@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Survey</title>
+        <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body>
+    @{
+        <fieldset>
+        <legend><h1>SURVEY</h1></legend>
+        <form action="/results" method="post">
+            Name: <input type="text" name="Name"><br>
+                
+                Hideout Location: <select name="Location">
+                    <option value="Central City">Star City</option>
+                    <option value="Metropolis">Metropolis</option>
+                    <option value="Gotham City">Gotham City</option>
+                    <option value="Themyscira">Themyscira</option>
+                    </select><br>
+               
+                Favorite Weapon: <select name="FavWeapon">
+                    <option value="Heat Vision">Heat Vision</option>
+                    <option value="Batarang">Batarang</option>
+                    <option value="Sword and Shield">Sword and Shield</option>
+                    <option value="Bow and Arrow">Bow and Arrow</option>
+                    </select><br>
+                
+                Comment:<br>
+                <textarea name="Comment" id="comment" cols="30" rows="10"></textarea><br>
+               
+                <input type="submit" value="submit">
+
+        </form>
+        </fieldset>
+    }
+    </body>
+</html>
